@@ -1,7 +1,6 @@
 import express from "express";
 import { getNotes, createNote, getUserNotes, getNoteById, updateNote, deleteNote } from "./note.Controller.js";
 import { verifyToken } from "../../Middleware/verifyToken.js";
-
 const noteRoute = express.Router();
 noteRoute.use(verifyToken);
 
