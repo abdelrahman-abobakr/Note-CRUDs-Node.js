@@ -34,7 +34,7 @@ const userSchema = Schema({
     },
     password:{
         type: String,
-        maxlength:8,
+        minlength:8,
         required: true
     },
     role:{
